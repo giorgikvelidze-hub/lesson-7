@@ -79,3 +79,26 @@ img{
 .card:nth-of-type(4):hover p{
 	opacity: 1;
 }
+
+.logo-animation{
+	width: 150px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	animation-name: company;
+	animation-duration: 2s;
+	animation-delay:0,5s ;
+	animation-timing-function: ease-in-aut;
+	animation-iteration-count: 5;
+	animation-direction: alternate;
+	animation-fill-mode:backwards;
+}
+@keyframes company{
+	from{
+		transform: rotate(0deg);
+
+	}
+	to {
+		transform: rotate(230deg);
+	}
+}
