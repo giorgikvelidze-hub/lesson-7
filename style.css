@@ -39,6 +39,11 @@ img{
 	border-radius: 25px;
 	left: 0;
 	text-align: center;
+
+	transition-property:all;
+	transition-duration: 3s;
+	transition-delay: 0,6s;
+
 }
 
 .card:nth-child(3n) P{
@@ -61,4 +66,16 @@ img{
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
+}
+
+.card p:hover{
+	color: black;
+	border-bottom:10px solid yellow ;
+}
+
+.card:nth-of-type(4) p{
+	opacity: 0;
+}
+.card:nth-of-type(4):hover p{
+	opacity: 1;
 }
