@@ -1,4 +1,5 @@
-*{
+*
+{
 	margin: 0px;
 	padding: 0;
 	box-sizing: border-box;
@@ -20,10 +21,13 @@ img{
 	position: relative;
 }
 .card img{
-	height: 350px;
+	height: 400px;
 	object-fit: cover;
+
 	
 }
+
+
 .card p{
 	position: absolute;
 	bottom: 20px;
@@ -40,4 +44,21 @@ img{
 .card:nth-child(3n) P{
 	background-color: green;
 
+}
+.section.title::before{
+
+	width: 10px;
+	height: 10px;
+	background-color: red;
+	border-radius: 50%;
+	display: inline-block;
+
+}
+
+.bg-img{
+	height: 500px;
+	background-image: url(foto/foto.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
 }
