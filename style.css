@@ -5,7 +5,10 @@
 	box-sizing: border-box;
 }
 
+.body {
+	overflow-x: hidden;
 
+} 
 
 
 img{
@@ -89,15 +92,15 @@ img{
 	position: absolute;
 	top: 20px;
 	left: 20px;
-	animation-name: company;
-	animation-duration: 2s;
-	animation-delay:0,5s ;
+	animation-name: bird2;
+	animation-duration: 5s;
+	animation-delay:3s ;
 	animation-timing-function: ease-in-aut;
 	animation-iteration-count:infinite;
 	animation-direction: alternate;
 	animation-fill-mode:backwards;
 }
-@keyframes company{
+@keyframes bird2{
 	from{
 		transform: rotate(0deg);
 
@@ -107,13 +110,33 @@ img{
 	}
 }
 
+@keyframes bird2{
+	25%{
+		eft:calc(100% - 30px); 
+		top:calc(100% - 30px); 
+	}
+	25%{
+		left: calc(100% - 30px);
+		top: 20px;
+	}
+	50%{
+		left:calc(100% - 30px); 
+		top:calc(100% - 80px); 
+		
+	}
+	75%{
+		left:calc(100% - 30px); 
+		top:calc(100% - 30px); 
+	}
+}
+
 
 .logo{
 	width: 150px;
 	position: absolute;
 	top: 20px;
 	right: 20px;
-	animation-name: company;
+	animation-name: bird;
 	animation-duration: 2s;
 	animation-delay:0,5s ;
 	animation-timing-function: ease-in-aut;
@@ -121,7 +144,7 @@ img{
 	animation-direction: alternate;
 	animation-fill-mode:backwards;
 }
-@keyframes company{
+@keyframes bird{
 	from{
 		transform: rotate(0deg);
 
