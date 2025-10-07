@@ -4,6 +4,10 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+
+
+
 img{
 	width: 100%;
 }
@@ -89,7 +93,7 @@ img{
 	animation-duration: 2s;
 	animation-delay:0,5s ;
 	animation-timing-function: ease-in-aut;
-	animation-iteration-count: 5;
+	animation-iteration-count:infinite;
 	animation-direction: alternate;
 	animation-fill-mode:backwards;
 }
@@ -99,6 +103,30 @@ img{
 
 	}
 	to {
-		transform: rotate(230deg);
+		transform: rotate(360deg);
+	}
+}
+
+
+.logo{
+	width: 150px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	animation-name: company;
+	animation-duration: 2s;
+	animation-delay:0,5s ;
+	animation-timing-function: ease-in-aut;
+	animation-iteration-count:infinite;
+	animation-direction: alternate;
+	animation-fill-mode:backwards;
+}
+@keyframes company{
+	from{
+		transform: rotate(0deg);
+
+	}
+	to {
+		transform: rotate(360deg);
 	}
 }
